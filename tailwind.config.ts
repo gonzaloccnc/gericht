@@ -3,12 +3,15 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
+      colors: {
+        dark: '#0C0B08',
+        primary: '#DCCA87',
+        secondary: '#AAAAAA'
+      },
       fontSize: {
         banner: '5.625rem',
         title: '4rem',

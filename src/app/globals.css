@@ -20,7 +20,7 @@
     @apply text-highlight font-bold
   }
 
-  p,span {
+  p,span, li {
     @apply text-base font-openSans font-normal
   }
 }

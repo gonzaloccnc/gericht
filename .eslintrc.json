@@ -5,15 +5,18 @@
         "node": true
     },
     "extends": [
-        "standard-with-typescript",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended"
     ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
+        "project": "./tsconfig.json",
         "ecmaVersion": "latest",
-        "sourceType": "module",
-        "project": "./tsconfig.json"
+        "sourceType": "module"
     },
     "plugins": [
+        "@typescript-eslint",
         "react"
     ],
     "rules": {
@@ -22,6 +25,8 @@
         "jsx-quotes": [
             "error",
             "prefer-single"
-        ]
+        ],
+        "no-multiple-empty-lines": "off",
+        "react/prop-types": "off"
     }
 }
